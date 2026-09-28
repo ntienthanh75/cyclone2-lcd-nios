@@ -1,6 +1,6 @@
-# Cyclone II LCD Nios II Project
+# Cyclone II LCD Nios II Repository
 
-This project is part of the Cyclone II `EP2C5T144C8` board project family. It combines the Nios II system with the LCD/touch hardware on the board.
+This repository contains one design in the shared Cyclone II FPGA Board project. It targets the `EP2C5T144C8` board and combines the Nios II system with the LCD/touch hardware.
 
 ## Target board
 
@@ -15,13 +15,13 @@ The related LED/joystick project documents the shared board connections in the [
 
 ## Main board connections
 
-This project uses the board SDRAM and LCD/touch interface defined in `lcd_nios.qsf`. The LCD data and control pins are assigned there; do not reuse those pins for joystick or LED signals while this design is running.
+This repository uses the board SDRAM and LCD/touch interface defined in `lcd_nios.qsf`. The LCD data and control pins are assigned there; do not reuse those pins for joystick or LED signals while this design is running.
 
 The LED outputs remain on pins `8`, `9`, `24`, and `25`. The buzzer is active-low; drive its output high to keep it muted.
 
 ## Build and download
 
-Open `lcd_nios.qpf` in Quartus II 13.0 SP1, compile the project, and program the generated `.sof` with:
+Open `lcd_nios.qpf` in Quartus II 13.0 SP1, compile the repository design, and program the generated `.sof` with:
 
 ```powershell
 & 'D:\Program\altera\13.0sp1\quartus\bin64\jtagconfig.exe'
@@ -35,4 +35,4 @@ The `.sof` configuration is temporary and is lost after power-off.
 - [Cyclone II 5LED and joystick projects](https://github.com/ntienthanh75/fpga-cyclone2-5led)
 - [Adder with timing constraints](https://github.com/ntienthanh75/adders_time_constrains)
 
-This project runs software on the Nios II core and uses the 3.2-inch touch LCD, four embedded LEDs, and the board buzzer.
+This repository runs software on the Nios II core and uses the 3.2-inch touch LCD, four embedded LEDs, and the board buzzer.
