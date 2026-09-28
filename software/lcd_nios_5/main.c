@@ -1,58 +1,67 @@
-/*********************************************************************************************************
-* File                : main.c
-* Hardware Environment:
-* Build Environment   : RealView MDK-ARM  Version: 4.20
-* Version             : v0.0.1
-* By                  : NGUYEN Tien Thanh
-* Created             : Jan 18, 2024
-*********************************************************************************************************/
+/*
+ * Nios LCD flower demo
+ * Creator: NGUYEN Tien Thanh
+ */
 #include "alt_types.h"
 #include <io.h>
-#include <unistd.h>
 #include <system.h>
 #include "altera_avalon_pio_regs.h"
 #include "LCD32.h"
-#include "touch.h"
-#include "game.h"
-#define msleep(ms)  usleep(1000*ms)
-#define DIRECTION_PA(data)  IOWR_ALTERA_AVALON_PIO_DIRECTION(PA_BASE, data)
-#define DATA_PA(data)  IOWR_ALTERA_AVALON_PIO_DATA(PA_BASE, data)
-int main(void)
-{     
-       //IOWR_ALTERA_AVALON_PIO_DATA(VCC_BASE, 1);
-       //IOWR_ALTERA_AVALON_PIO_DATA(GND_BASE, 0);
-       IOWR_ALTERA_AVALON_PIO_DATA(BL_P_BASE, 1);
-       IOWR_ALTERA_AVALON_PIO_DATA(BL_N_BASE, 0);
-       
-       TP_Init(); 
-	   LCD_Initializtion();
-       
-       LCD_Clear(Blue);
-       LCD_Clear(Yellow);
-       LCD_Clear(White);
-       LCD_Clear(Black);
-       LCD_Clear(Magenta);
-       LCD_Clear(Red);
-       LCD_Clear(Green);
-       LCD_Clear(Cyan);
-        
-     // LCD_show_test();
-         
-        TouchPanel_Calibrate(); 
-   
-    /*while (1)
-	{
-    	getDisplayPoint(&display, Read_Ads7846(), &matrix ) ;
-    	TP_DrawPoint(display.x,display.y);
-	}*/
-        DrawOnLCDAndStore();
-        delay_ms(500);
-        DisplayNumber(42);
-        delay_ms(500);
-        DisplayNumber(9999);
-        delay_ms(500);
-        DisplayStoredImage();
-   
 
-	return 0;
+static void fill_circle(int center_x, int center_y, int radius, alt_u16 color)
+{
+    int x;
+    int y;
+    int radius_squared = radius * radius;
+
+    for (y = -radius; y <= radius; y++)
+    {
+        for (x = -radius; x <= radius; x++)
+        {
+            if ((x * x) + (y * y) <= radius_squared)
+            {
+                LCD_SetPoint((alt_u16)(center_x + x),
+                             (alt_u16)(center_y + y), color);
+            }
+        }
+    }
+}
+
+static void draw_flower(void)
+{
+    LCD_Clear(Black);
+
+    /* Stem and leaves. */
+    LCD_DrawLine(160, 140, 160, 225, Green);
+    LCD_DrawLine(160, 185, 125, 165, Green);
+    LCD_DrawLine(160, 205, 198, 180, Green);
+    LCD_DrawLine(125, 165, 145, 170, Green);
+    LCD_DrawLine(198, 180, 175, 190, Green);
+
+    /* Five petals and the yellow center. */
+    fill_circle(160, 78, 30, Magenta);
+    fill_circle(130, 106, 30, Red);
+    fill_circle(138, 143, 30, Magenta);
+    fill_circle(190, 106, 30, Red);
+    fill_circle(182, 143, 30, Magenta);
+    fill_circle(160, 118, 22, Yellow);
+
+    GUI_Text(112, 12, (alt_u8 *)"Nios flower", White, Black);
+}
+
+int main(void)
+{
+    /* Backlight is active-high on BL_P and active-low on BL_N. */
+    IOWR_ALTERA_AVALON_PIO_DATA(BL_P_BASE, 1);
+    IOWR_ALTERA_AVALON_PIO_DATA(BL_N_BASE, 0);
+
+    LCD_Initializtion();
+    draw_flower();
+
+    while (1)
+    {
+        /* Keep the flower displayed until the next Nios download or reset. */
+    }
+
+    return 0;
 }
