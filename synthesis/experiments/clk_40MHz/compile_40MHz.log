@@ -1,0 +1,905 @@
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Shell
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Copyright (C) 1991-2013 Altera Corporation. All rights reserved.
+    Info: Your use of Altera Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Altera Program License 
+    Info: Subscription Agreement, Altera MegaCore Function License 
+    Info: Agreement, or other applicable license agreement, including, 
+    Info: without limitation, that your use is for the sole purpose of 
+    Info: programming logic devices manufactured by Altera and sold by 
+    Info: Altera or its authorized distributors.  Please refer to the 
+    Info: applicable agreement for further details.
+    Info: Processing started: Tue Sep 29 13:16:02 2026
+Info: Command: quartus_sh --flow compile lcd_nios
+Info: Quartus(args): compile lcd_nios
+Info: Project Name = D:/fpga/lcd_nios/synthesis/experiments/clk_40MHz/lcd_nios
+Info: Revision Name = lcd_nios
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Sep 29 13:16:04 2026
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lcd_nios -c lcd_nios
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file 5led/five_leds.vhd
+    Info (12022): Found design unit 1: five_leds-light
+    Info (12023): Found entity 1: five_leds
+Info (12021): Found 1 design units, including 1 entities, in source file sopc/synthesis/sopc.v
+    Info (12023): Found entity 1: SOPC
+Info (12021): Found 1 design units, including 1 entities, in source file sopc/synthesis/submodules/sopc_irq_mapper.sv
+    Info (12023): Found entity 1: SOPC_irq_mapper
+Info (12021): Found 1 design units, including 1 entities, in source file sopc/synthesis/submodules/altera_merlin_width_adapter.sv
+    Info (12023): Found entity 1: altera_merlin_width_adapter
+Info (12021): Found 1 design units, including 1 entities, in source file sopc/synthesis/submodules/altera_merlin_address_alignment.sv
+    Info (12023): Found entity 1: altera_merlin_address_alignment
+Info (12021): Found 1 design units, including 1 entities, in source file sopc/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+    Info (12023): Found entity 1: altera_merlin_burst_uncompressor
+Info (12021): Found 2 design units, including 2 entities, in source file sopc/synthesis/submodules/altera_merlin_arbitrator.sv
+    Info (12023): Found entity 1: altera_merlin_arbitrator
+    Info (12023): Found entity 2: altera_merlin_arb_adder
+Info (12021): Found 1 design units, including 1 entities, in source file sopc/synthesis/submodules/sopc_rsp_xbar_mux_001.sv
+    Info (12023): Found entity 1: SOPC_rsp_xbar_mux_001
+Info (12021): Found 1 design units, including 1 entities, in source file sopc/synthesis/submodules/sopc_rsp_xbar_mux.sv
+    Info (12023): Found entity 1: SOPC_rsp_xbar_mux
+Info (12021): Found 1 design units, including 1 entities, in source file sopc/synthesis/submodules/sopc_rsp_xbar_demux_003.sv
+    Info (12023): Found entity 1: SOPC_rsp_xbar_demux_003
+Info (12021): Found 1 design units, including 1 entities, in source file sopc/synthesis/submodules/sopc_rsp_xbar_demux.sv
+    Info (12023): Found entity 1: SOPC_rsp_xbar_demux
+Info (12021): Found 1 design units, including 1 entities, in source file sopc/synthesis/submodules/sopc_cmd_xbar_mux.sv
+    Info (12023): Found entity 1: SOPC_cmd_xbar_mux
+Info (12021): Found 1 design units, including 1 entities, in source file sopc/synthesis/submodules/sopc_cmd_xbar_demux_001.sv
+    Info (12023): Found entity 1: SOPC_cmd_xbar_demux_001
+Info (12021): Found 1 design units, including 1 entities, in source file sopc/synthesis/submodules/sopc_cmd_xbar_demux.sv
+    Info (12023): Found entity 1: SOPC_cmd_xbar_demux
+Info (12021): Found 1 design units, including 1 entities, in source file sopc/synthesis/submodules/altera_reset_controller.v
+    Info (12023): Found entity 1: altera_reset_controller
+Info (12021): Found 1 design units, including 1 entities, in source file sopc/synthesis/submodules/altera_reset_synchronizer.v
+    Info (12023): Found entity 1: altera_reset_synchronizer
+Info (12021): Found 7 design units, including 7 entities, in source file sopc/synthesis/submodules/altera_merlin_burst_adapter.sv
+    Info (12023): Found entity 1: altera_merlin_burst_adapter_burstwrap_increment
+    Info (12023): Found entity 2: altera_merlin_burst_adapter_adder
+    Info (12023): Found entity 3: altera_merlin_burst_adapter_subtractor
+    Info (12023): Found entity 4: altera_merlin_burst_adapter_min
+    Info (12023): Found entity 5: altera_merlin_burst_adapter
+    Info (12023): Found entity 6: altera_merlin_burst_adapter_uncompressed_only
+    Info (12023): Found entity 7: altera_merlin_burst_adapter_full
+Info (12021): Found 1 design units, including 1 entities, in source file sopc/synthesis/submodules/altera_merlin_traffic_limiter.sv
+    Info (12023): Found entity 1: altera_merlin_traffic_limiter
+Info (12021): Found 1 design units, including 1 entities, in source file sopc/synthesis/submodules/altera_avalon_st_pipeline_base.v
+    Info (12023): Found entity 1: altera_avalon_st_pipeline_base
+Info (12021): Found 2 design units, including 2 entities, in source file sopc/synthesis/submodules/sopc_id_router_003.sv
+    Info (12023): Found entity 1: SOPC_id_router_003_default_decode
+    Info (12023): Found entity 2: SOPC_id_router_003
+Info (12021): Found 2 design units, including 2 entities, in source file sopc/synthesis/submodules/sopc_id_router_002.sv
+    Info (12023): Found entity 1: SOPC_id_router_002_default_decode
+    Info (12023): Found entity 2: SOPC_id_router_002
+Info (12021): Found 2 design units, including 2 entities, in source file sopc/synthesis/submodules/sopc_id_router.sv
+    Info (12023): Found entity 1: SOPC_id_router_default_decode
+    Info (12023): Found entity 2: SOPC_id_router
+Info (12021): Found 2 design units, including 2 entities, in source file sopc/synthesis/submodules/sopc_addr_router_001.sv
+    Info (12023): Found entity 1: SOPC_addr_router_001_default_decode
+    Info (12023): Found entity 2: SOPC_addr_router_001
+Info (12021): Found 2 design units, including 2 entities, in source file sopc/synthesis/submodules/sopc_addr_router.sv
+    Info (12023): Found entity 1: SOPC_addr_router_default_decode
+    Info (12023): Found entity 2: SOPC_addr_router
+Info (12021): Found 1 design units, including 1 entities, in source file sopc/synthesis/submodules/altera_avalon_sc_fifo.v
+    Info (12023): Found entity 1: altera_avalon_sc_fifo
+Info (12021): Found 1 design units, including 1 entities, in source file sopc/synthesis/submodules/altera_merlin_slave_agent.sv
+    Info (12023): Found entity 1: altera_merlin_slave_agent
+Info (12021): Found 1 design units, including 1 entities, in source file sopc/synthesis/submodules/altera_merlin_master_agent.sv
+    Info (12023): Found entity 1: altera_merlin_master_agent
+Info (12021): Found 1 design units, including 1 entities, in source file sopc/synthesis/submodules/altera_merlin_slave_translator.sv
+    Info (12023): Found entity 1: altera_merlin_slave_translator
+Info (12021): Found 1 design units, including 1 entities, in source file sopc/synthesis/submodules/altera_merlin_master_translator.sv
+    Info (12023): Found entity 1: altera_merlin_master_translator
+Info (12021): Found 1 design units, including 1 entities, in source file sopc/synthesis/submodules/sopc_buzz.v
+    Info (12023): Found entity 1: SOPC_buzz
+Info (12021): Found 1 design units, including 1 entities, in source file sopc/synthesis/submodules/sopc_led.v
+    Info (12023): Found entity 1: SOPC_led
+Info (12021): Found 1 design units, including 1 entities, in source file sopc/synthesis/submodules/sopc_sysid.v
+    Info (12023): Found entity 1: SOPC_sysid
+Info (12021): Found 24 design units, including 24 entities, in source file sopc/synthesis/submodules/sopc_cpu.v
+    Info (12023): Found entity 1: SOPC_cpu_ic_data_module
+    Info (12023): Found entity 2: SOPC_cpu_ic_tag_module
+    Info (12023): Found entity 3: SOPC_cpu_bht_module
+    Info (12023): Found entity 4: SOPC_cpu_register_bank_a_module
+    Info (12023): Found entity 5: SOPC_cpu_register_bank_b_module
+    Info (12023): Found entity 6: SOPC_cpu_nios2_oci_debug
+    Info (12023): Found entity 7: SOPC_cpu_ociram_sp_ram_module
+    Info (12023): Found entity 8: SOPC_cpu_nios2_ocimem
+    Info (12023): Found entity 9: SOPC_cpu_nios2_avalon_reg
+    Info (12023): Found entity 10: SOPC_cpu_nios2_oci_break
+    Info (12023): Found entity 11: SOPC_cpu_nios2_oci_xbrk
+    Info (12023): Found entity 12: SOPC_cpu_nios2_oci_dbrk
+    Info (12023): Found entity 13: SOPC_cpu_nios2_oci_itrace
+    Info (12023): Found entity 14: SOPC_cpu_nios2_oci_td_mode
+    Info (12023): Found entity 15: SOPC_cpu_nios2_oci_dtrace
+    Info (12023): Found entity 16: SOPC_cpu_nios2_oci_compute_tm_count
+    Info (12023): Found entity 17: SOPC_cpu_nios2_oci_fifowp_inc
+    Info (12023): Found entity 18: SOPC_cpu_nios2_oci_fifocount_inc
+    Info (12023): Found entity 19: SOPC_cpu_nios2_oci_fifo
+    Info (12023): Found entity 20: SOPC_cpu_nios2_oci_pib
+    Info (12023): Found entity 21: SOPC_cpu_nios2_oci_im
+    Info (12023): Found entity 22: SOPC_cpu_nios2_performance_monitors
+    Info (12023): Found entity 23: SOPC_cpu_nios2_oci
+    Info (12023): Found entity 24: SOPC_cpu
+Info (12021): Found 1 design units, including 1 entities, in source file sopc/synthesis/submodules/sopc_cpu_jtag_debug_module_sysclk.v
+    Info (12023): Found entity 1: SOPC_cpu_jtag_debug_module_sysclk
+Info (12021): Found 1 design units, including 1 entities, in source file sopc/synthesis/submodules/sopc_cpu_jtag_debug_module_tck.v
+    Info (12023): Found entity 1: SOPC_cpu_jtag_debug_module_tck
+Info (12021): Found 1 design units, including 1 entities, in source file sopc/synthesis/submodules/sopc_cpu_jtag_debug_module_wrapper.v
+    Info (12023): Found entity 1: SOPC_cpu_jtag_debug_module_wrapper
+Info (12021): Found 1 design units, including 1 entities, in source file sopc/synthesis/submodules/sopc_cpu_mult_cell.v
+    Info (12023): Found entity 1: SOPC_cpu_mult_cell
+Info (12021): Found 1 design units, including 1 entities, in source file sopc/synthesis/submodules/sopc_cpu_oci_test_bench.v
+    Info (12023): Found entity 1: SOPC_cpu_oci_test_bench
+Info (12021): Found 1 design units, including 1 entities, in source file sopc/synthesis/submodules/sopc_cpu_test_bench.v
+    Info (12023): Found entity 1: SOPC_cpu_test_bench
+Info (12021): Found 1 design units, including 1 entities, in source file sopc/synthesis/submodules/sopc_lcd32_data.v
+    Info (12023): Found entity 1: SOPC_lcd32_data
+Info (12021): Found 1 design units, including 1 entities, in source file sopc/synthesis/submodules/sopc_touch_irq.v
+    Info (12023): Found entity 1: SOPC_touch_irq
+Info (12021): Found 1 design units, including 1 entities, in source file sopc/synthesis/submodules/sopc_lcd_cs.v
+    Info (12023): Found entity 1: SOPC_lcd_cs
+Info (12021): Found 1 design units, including 1 entities, in source file sopc/synthesis/submodules/sopc_spi_touch.v
+    Info (12023): Found entity 1: SOPC_spi_touch
+Info (12021): Found 5 design units, including 5 entities, in source file sopc/synthesis/submodules/sopc_jtag_uart.v
+    Info (12023): Found entity 1: SOPC_jtag_uart_sim_scfifo_w
+    Info (12023): Found entity 2: SOPC_jtag_uart_scfifo_w
+    Info (12023): Found entity 3: SOPC_jtag_uart_sim_scfifo_r
+    Info (12023): Found entity 4: SOPC_jtag_uart_scfifo_r
+    Info (12023): Found entity 5: SOPC_jtag_uart
+Info (12021): Found 2 design units, including 2 entities, in source file sopc/synthesis/submodules/sopc_sdram.v
+    Info (12023): Found entity 1: SOPC_sdram_input_efifo_module
+    Info (12023): Found entity 2: SOPC_sdram
+Info (12021): Found 3 design units, including 3 entities, in source file sopc/synthesis/submodules/sopc_epcs.v
+    Info (12023): Found entity 1: SOPC_epcs_sub
+    Info (12023): Found entity 2: tornado_SOPC_epcs_atom
+    Info (12023): Found entity 3: SOPC_epcs
+Info (12021): Found 1 design units, including 1 entities, in source file lcd_nios.bdf
+    Info (12023): Found entity 1: lcd_nios
+Info (12127): Elaborating entity "lcd_nios" for the top level hierarchy
+Info (12128): Elaborating entity "SOPC" for hierarchy "SOPC:inst2"
+Info (12128): Elaborating entity "SOPC_epcs" for hierarchy "SOPC:inst2|SOPC_epcs:epcs"
+Info (12128): Elaborating entity "SOPC_epcs_sub" for hierarchy "SOPC:inst2|SOPC_epcs:epcs|SOPC_epcs_sub:the_SOPC_epcs_sub"
+Info (12128): Elaborating entity "tornado_SOPC_epcs_atom" for hierarchy "SOPC:inst2|SOPC_epcs:epcs|tornado_SOPC_epcs_atom:the_tornado_SOPC_epcs_atom"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "SOPC:inst2|SOPC_epcs:epcs|altsyncram:the_boot_copier_rom"
+Info (12130): Elaborated megafunction instantiation "SOPC:inst2|SOPC_epcs:epcs|altsyncram:the_boot_copier_rom"
+Info (12133): Instantiated megafunction "SOPC:inst2|SOPC_epcs:epcs|altsyncram:the_boot_copier_rom" with the following parameter:
+    Info (12134): Parameter "byte_size" = "8"
+    Info (12134): Parameter "init_file" = "SOPC_epcs_boot_rom.hex"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "128"
+    Info (12134): Parameter "operation_mode" = "ROM"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info (12134): Parameter "read_during_write_mode_mixed_ports" = "DONT_CARE"
+    Info (12134): Parameter "width_a" = "32"
+    Info (12134): Parameter "widthad_a" = "7"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_6431.tdf
+    Info (12023): Found entity 1: altsyncram_6431
+Info (12128): Elaborating entity "altsyncram_6431" for hierarchy "SOPC:inst2|SOPC_epcs:epcs|altsyncram:the_boot_copier_rom|altsyncram_6431:auto_generated"
+Info (12128): Elaborating entity "SOPC_sdram" for hierarchy "SOPC:inst2|SOPC_sdram:sdram"
+Info (12128): Elaborating entity "SOPC_sdram_input_efifo_module" for hierarchy "SOPC:inst2|SOPC_sdram:sdram|SOPC_sdram_input_efifo_module:the_SOPC_sdram_input_efifo_module"
+Info (12128): Elaborating entity "SOPC_jtag_uart" for hierarchy "SOPC:inst2|SOPC_jtag_uart:jtag_uart"
+Info (12128): Elaborating entity "SOPC_jtag_uart_scfifo_w" for hierarchy "SOPC:inst2|SOPC_jtag_uart:jtag_uart|SOPC_jtag_uart_scfifo_w:the_SOPC_jtag_uart_scfifo_w"
+Info (12128): Elaborating entity "scfifo" for hierarchy "SOPC:inst2|SOPC_jtag_uart:jtag_uart|SOPC_jtag_uart_scfifo_w:the_SOPC_jtag_uart_scfifo_w|scfifo:wfifo"
+Info (12130): Elaborated megafunction instantiation "SOPC:inst2|SOPC_jtag_uart:jtag_uart|SOPC_jtag_uart_scfifo_w:the_SOPC_jtag_uart_scfifo_w|scfifo:wfifo"
+Info (12133): Instantiated megafunction "SOPC:inst2|SOPC_jtag_uart:jtag_uart|SOPC_jtag_uart_scfifo_w:the_SOPC_jtag_uart_scfifo_w|scfifo:wfifo" with the following parameter:
+    Info (12134): Parameter "lpm_hint" = "RAM_BLOCK_TYPE=AUTO"
+    Info (12134): Parameter "lpm_numwords" = "64"
+    Info (12134): Parameter "lpm_showahead" = "OFF"
+    Info (12134): Parameter "lpm_type" = "scfifo"
+    Info (12134): Parameter "lpm_width" = "8"
+    Info (12134): Parameter "lpm_widthu" = "6"
+    Info (12134): Parameter "overflow_checking" = "OFF"
+    Info (12134): Parameter "underflow_checking" = "OFF"
+    Info (12134): Parameter "use_eab" = "ON"
+Info (12021): Found 1 design units, including 1 entities, in source file db/scfifo_1n21.tdf
+    Info (12023): Found entity 1: scfifo_1n21
+Info (12128): Elaborating entity "scfifo_1n21" for hierarchy "SOPC:inst2|SOPC_jtag_uart:jtag_uart|SOPC_jtag_uart_scfifo_w:the_SOPC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_1n21:auto_generated"
+Info (12021): Found 1 design units, including 1 entities, in source file db/a_dpfifo_8t21.tdf
+    Info (12023): Found entity 1: a_dpfifo_8t21
+Info (12128): Elaborating entity "a_dpfifo_8t21" for hierarchy "SOPC:inst2|SOPC_jtag_uart:jtag_uart|SOPC_jtag_uart_scfifo_w:the_SOPC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_1n21:auto_generated|a_dpfifo_8t21:dpfifo"
+Info (12021): Found 1 design units, including 1 entities, in source file db/a_fefifo_7cf.tdf
+    Info (12023): Found entity 1: a_fefifo_7cf
+Info (12128): Elaborating entity "a_fefifo_7cf" for hierarchy "SOPC:inst2|SOPC_jtag_uart:jtag_uart|SOPC_jtag_uart_scfifo_w:the_SOPC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_1n21:auto_generated|a_dpfifo_8t21:dpfifo|a_fefifo_7cf:fifo_state"
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_rj7.tdf
+    Info (12023): Found entity 1: cntr_rj7
+Info (12128): Elaborating entity "cntr_rj7" for hierarchy "SOPC:inst2|SOPC_jtag_uart:jtag_uart|SOPC_jtag_uart_scfifo_w:the_SOPC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_1n21:auto_generated|a_dpfifo_8t21:dpfifo|a_fefifo_7cf:fifo_state|cntr_rj7:count_usedw"
+Info (12021): Found 1 design units, including 1 entities, in source file db/dpram_5h21.tdf
+    Info (12023): Found entity 1: dpram_5h21
+Info (12128): Elaborating entity "dpram_5h21" for hierarchy "SOPC:inst2|SOPC_jtag_uart:jtag_uart|SOPC_jtag_uart_scfifo_w:the_SOPC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_1n21:auto_generated|a_dpfifo_8t21:dpfifo|dpram_5h21:FIFOram"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_9tl1.tdf
+    Info (12023): Found entity 1: altsyncram_9tl1
+Info (12128): Elaborating entity "altsyncram_9tl1" for hierarchy "SOPC:inst2|SOPC_jtag_uart:jtag_uart|SOPC_jtag_uart_scfifo_w:the_SOPC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_1n21:auto_generated|a_dpfifo_8t21:dpfifo|dpram_5h21:FIFOram|altsyncram_9tl1:altsyncram2"
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_fjb.tdf
+    Info (12023): Found entity 1: cntr_fjb
+Info (12128): Elaborating entity "cntr_fjb" for hierarchy "SOPC:inst2|SOPC_jtag_uart:jtag_uart|SOPC_jtag_uart_scfifo_w:the_SOPC_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_1n21:auto_generated|a_dpfifo_8t21:dpfifo|cntr_fjb:rd_ptr_count"
+Info (12128): Elaborating entity "SOPC_jtag_uart_scfifo_r" for hierarchy "SOPC:inst2|SOPC_jtag_uart:jtag_uart|SOPC_jtag_uart_scfifo_r:the_SOPC_jtag_uart_scfifo_r"
+Info (12128): Elaborating entity "alt_jtag_atlantic" for hierarchy "SOPC:inst2|SOPC_jtag_uart:jtag_uart|alt_jtag_atlantic:SOPC_jtag_uart_alt_jtag_atlantic"
+Info (12130): Elaborated megafunction instantiation "SOPC:inst2|SOPC_jtag_uart:jtag_uart|alt_jtag_atlantic:SOPC_jtag_uart_alt_jtag_atlantic"
+Info (12133): Instantiated megafunction "SOPC:inst2|SOPC_jtag_uart:jtag_uart|alt_jtag_atlantic:SOPC_jtag_uart_alt_jtag_atlantic" with the following parameter:
+    Info (12134): Parameter "INSTANCE_ID" = "0"
+    Info (12134): Parameter "LOG2_RXFIFO_DEPTH" = "6"
+    Info (12134): Parameter "LOG2_TXFIFO_DEPTH" = "6"
+    Info (12134): Parameter "SLD_AUTO_INSTANCE_INDEX" = "YES"
+Info (12128): Elaborating entity "SOPC_spi_touch" for hierarchy "SOPC:inst2|SOPC_spi_touch:spi_touch"
+Info (12128): Elaborating entity "SOPC_lcd_cs" for hierarchy "SOPC:inst2|SOPC_lcd_cs:lcd_cs"
+Info (12128): Elaborating entity "SOPC_touch_irq" for hierarchy "SOPC:inst2|SOPC_touch_irq:touch_irq"
+Info (12128): Elaborating entity "SOPC_lcd32_data" for hierarchy "SOPC:inst2|SOPC_lcd32_data:lcd32_data"
+Info (12128): Elaborating entity "SOPC_cpu" for hierarchy "SOPC:inst2|SOPC_cpu:cpu"
+Info (12128): Elaborating entity "SOPC_cpu_test_bench" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_test_bench:the_SOPC_cpu_test_bench"
+Info (12128): Elaborating entity "SOPC_cpu_ic_data_module" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_ic_data_module:SOPC_cpu_ic_data"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_ic_data_module:SOPC_cpu_ic_data|altsyncram:the_altsyncram"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_c9d1.tdf
+    Info (12023): Found entity 1: altsyncram_c9d1
+Info (12128): Elaborating entity "altsyncram_c9d1" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_ic_data_module:SOPC_cpu_ic_data|altsyncram:the_altsyncram|altsyncram_c9d1:auto_generated"
+Info (12128): Elaborating entity "SOPC_cpu_ic_tag_module" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_ic_tag_module:SOPC_cpu_ic_tag"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_ic_tag_module:SOPC_cpu_ic_tag|altsyncram:the_altsyncram"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_keg1.tdf
+    Info (12023): Found entity 1: altsyncram_keg1
+Info (12128): Elaborating entity "altsyncram_keg1" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_ic_tag_module:SOPC_cpu_ic_tag|altsyncram:the_altsyncram|altsyncram_keg1:auto_generated"
+Info (12128): Elaborating entity "SOPC_cpu_bht_module" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_bht_module:SOPC_cpu_bht"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_bht_module:SOPC_cpu_bht|altsyncram:the_altsyncram"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_d5g1.tdf
+    Info (12023): Found entity 1: altsyncram_d5g1
+Info (12128): Elaborating entity "altsyncram_d5g1" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_bht_module:SOPC_cpu_bht|altsyncram:the_altsyncram|altsyncram_d5g1:auto_generated"
+Info (12128): Elaborating entity "SOPC_cpu_register_bank_a_module" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_register_bank_a_module:SOPC_cpu_register_bank_a"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_register_bank_a_module:SOPC_cpu_register_bank_a|altsyncram:the_altsyncram"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_djf1.tdf
+    Info (12023): Found entity 1: altsyncram_djf1
+Info (12128): Elaborating entity "altsyncram_djf1" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_register_bank_a_module:SOPC_cpu_register_bank_a|altsyncram:the_altsyncram|altsyncram_djf1:auto_generated"
+Info (12128): Elaborating entity "SOPC_cpu_register_bank_b_module" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_register_bank_b_module:SOPC_cpu_register_bank_b"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_register_bank_b_module:SOPC_cpu_register_bank_b|altsyncram:the_altsyncram"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ejf1.tdf
+    Info (12023): Found entity 1: altsyncram_ejf1
+Info (12128): Elaborating entity "altsyncram_ejf1" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_register_bank_b_module:SOPC_cpu_register_bank_b|altsyncram:the_altsyncram|altsyncram_ejf1:auto_generated"
+Info (12128): Elaborating entity "SOPC_cpu_mult_cell" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell"
+Info (12128): Elaborating entity "altera_mult_add" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altera_mult_add_mpt2.v
+    Info (12023): Found entity 1: altera_mult_add_mpt2
+Info (12128): Elaborating entity "altera_mult_add_mpt2" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_mpt2:auto_generated"
+Info (12128): Elaborating entity "altera_mult_add_rtl" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_mpt2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1"
+Warning (10858): Verilog HDL warning at altera_mult_add_rtl.v(642): object systolic_adder_output used but never assigned
+Info (12128): Elaborating entity "ama_register_function" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_mpt2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_register_function:signa_reg_block"
+Info (12128): Elaborating entity "ama_data_split_reg_ext_function" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_mpt2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_data_split_reg_ext_function:dataa_split"
+Info (12128): Elaborating entity "ama_register_with_ext_function" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_mpt2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_data_split_reg_ext_function:dataa_split|ama_register_with_ext_function:data_register_block_0"
+Info (12128): Elaborating entity "ama_register_function" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_mpt2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_data_split_reg_ext_function:dataa_split|ama_register_with_ext_function:data_register_block_0|ama_register_function:data_register_block"
+Info (12128): Elaborating entity "ama_dynamic_signed_function" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_mpt2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_data_split_reg_ext_function:dataa_split|ama_register_with_ext_function:data_register_block_0|ama_dynamic_signed_function:data_signed_extension_block"
+Info (12128): Elaborating entity "ama_data_split_reg_ext_function" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_mpt2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_data_split_reg_ext_function:datac_split"
+Info (12128): Elaborating entity "ama_register_with_ext_function" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_mpt2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_data_split_reg_ext_function:datac_split|ama_register_with_ext_function:data_register_block_0"
+Info (12128): Elaborating entity "ama_register_function" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_mpt2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_data_split_reg_ext_function:datac_split|ama_register_with_ext_function:data_register_block_0|ama_register_function:data_register_block"
+Info (12128): Elaborating entity "ama_dynamic_signed_function" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_mpt2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_data_split_reg_ext_function:datac_split|ama_register_with_ext_function:data_register_block_0|ama_dynamic_signed_function:data_signed_extension_block"
+Info (12128): Elaborating entity "ama_scanchain" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_mpt2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_scanchain:scanchain_block"
+Info (12128): Elaborating entity "ama_preadder_function" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_mpt2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_preadder_function:preadder_block"
+Info (12128): Elaborating entity "ama_adder_function" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_mpt2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_preadder_function:preadder_block|ama_adder_function:preadder_adder_0"
+Info (12128): Elaborating entity "ama_signed_extension_function" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_mpt2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_preadder_function:preadder_block|ama_adder_function:preadder_adder_0|ama_signed_extension_function:first_adder_ext_block_0"
+Info (12128): Elaborating entity "ama_signed_extension_function" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_mpt2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_preadder_function:preadder_block|ama_adder_function:preadder_adder_0|ama_signed_extension_function:second_adder_ext_block_0"
+Info (12128): Elaborating entity "ama_multiplier_function" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_mpt2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_multiplier_function:multiplier_block"
+Info (12128): Elaborating entity "ama_register_function" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_mpt2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_multiplier_function:multiplier_block|ama_register_function:multiplier_register_block_0"
+Info (12128): Elaborating entity "ama_register_function" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_mpt2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_multiplier_function:multiplier_block|ama_register_function:multiplier_register_block_1"
+Info (12128): Elaborating entity "ama_adder_function" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_mpt2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_adder_function:final_adder_block"
+Info (12128): Elaborating entity "ama_signed_extension_function" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_mpt2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_adder_function:final_adder_block|ama_signed_extension_function:first_adder_ext_block_0"
+Info (12128): Elaborating entity "ama_signed_extension_function" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_mpt2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_adder_function:final_adder_block|ama_signed_extension_function:second_adder_ext_block_0"
+Info (12128): Elaborating entity "ama_accumulator_function" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_mpt2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_accumulator_function:accumulator_block"
+Info (12128): Elaborating entity "ama_register_function" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_mpt2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_register_function:output_reg_block"
+Info (12128): Elaborating entity "altera_mult_add" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_2"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altera_mult_add_opt2.v
+    Info (12023): Found entity 1: altera_mult_add_opt2
+Info (12128): Elaborating entity "altera_mult_add_opt2" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_2|altera_mult_add_opt2:auto_generated"
+Info (12128): Elaborating entity "altera_mult_add_rtl" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_2|altera_mult_add_opt2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1"
+Warning (10858): Verilog HDL warning at altera_mult_add_rtl.v(642): object systolic_adder_output used but never assigned
+Info (12128): Elaborating entity "ama_accumulator_function" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_2|altera_mult_add_opt2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_accumulator_function:accumulator_block"
+Info (12128): Elaborating entity "SOPC_cpu_nios2_oci" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_nios2_oci:the_SOPC_cpu_nios2_oci"
+Info (12128): Elaborating entity "SOPC_cpu_nios2_oci_debug" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_nios2_oci:the_SOPC_cpu_nios2_oci|SOPC_cpu_nios2_oci_debug:the_SOPC_cpu_nios2_oci_debug"
+Info (12128): Elaborating entity "altera_std_synchronizer" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_nios2_oci:the_SOPC_cpu_nios2_oci|SOPC_cpu_nios2_oci_debug:the_SOPC_cpu_nios2_oci_debug|altera_std_synchronizer:the_altera_std_synchronizer"
+Info (12128): Elaborating entity "SOPC_cpu_nios2_ocimem" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_nios2_oci:the_SOPC_cpu_nios2_oci|SOPC_cpu_nios2_ocimem:the_SOPC_cpu_nios2_ocimem"
+Info (12128): Elaborating entity "SOPC_cpu_ociram_sp_ram_module" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_nios2_oci:the_SOPC_cpu_nios2_oci|SOPC_cpu_nios2_ocimem:the_SOPC_cpu_nios2_ocimem|SOPC_cpu_ociram_sp_ram_module:SOPC_cpu_ociram_sp_ram"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_nios2_oci:the_SOPC_cpu_nios2_oci|SOPC_cpu_nios2_ocimem:the_SOPC_cpu_nios2_ocimem|SOPC_cpu_ociram_sp_ram_module:SOPC_cpu_ociram_sp_ram|altsyncram:the_altsyncram"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_8471.tdf
+    Info (12023): Found entity 1: altsyncram_8471
+Info (12128): Elaborating entity "altsyncram_8471" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_nios2_oci:the_SOPC_cpu_nios2_oci|SOPC_cpu_nios2_ocimem:the_SOPC_cpu_nios2_ocimem|SOPC_cpu_ociram_sp_ram_module:SOPC_cpu_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_8471:auto_generated"
+Info (12128): Elaborating entity "SOPC_cpu_nios2_avalon_reg" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_nios2_oci:the_SOPC_cpu_nios2_oci|SOPC_cpu_nios2_avalon_reg:the_SOPC_cpu_nios2_avalon_reg"
+Info (12128): Elaborating entity "SOPC_cpu_nios2_oci_break" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_nios2_oci:the_SOPC_cpu_nios2_oci|SOPC_cpu_nios2_oci_break:the_SOPC_cpu_nios2_oci_break"
+Info (12128): Elaborating entity "SOPC_cpu_nios2_oci_xbrk" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_nios2_oci:the_SOPC_cpu_nios2_oci|SOPC_cpu_nios2_oci_xbrk:the_SOPC_cpu_nios2_oci_xbrk"
+Info (12128): Elaborating entity "SOPC_cpu_nios2_oci_dbrk" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_nios2_oci:the_SOPC_cpu_nios2_oci|SOPC_cpu_nios2_oci_dbrk:the_SOPC_cpu_nios2_oci_dbrk"
+Info (12128): Elaborating entity "SOPC_cpu_nios2_oci_itrace" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_nios2_oci:the_SOPC_cpu_nios2_oci|SOPC_cpu_nios2_oci_itrace:the_SOPC_cpu_nios2_oci_itrace"
+Info (12128): Elaborating entity "SOPC_cpu_nios2_oci_dtrace" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_nios2_oci:the_SOPC_cpu_nios2_oci|SOPC_cpu_nios2_oci_dtrace:the_SOPC_cpu_nios2_oci_dtrace"
+Info (12128): Elaborating entity "SOPC_cpu_nios2_oci_td_mode" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_nios2_oci:the_SOPC_cpu_nios2_oci|SOPC_cpu_nios2_oci_dtrace:the_SOPC_cpu_nios2_oci_dtrace|SOPC_cpu_nios2_oci_td_mode:SOPC_cpu_nios2_oci_trc_ctrl_td_mode"
+Info (12128): Elaborating entity "SOPC_cpu_nios2_oci_fifo" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_nios2_oci:the_SOPC_cpu_nios2_oci|SOPC_cpu_nios2_oci_fifo:the_SOPC_cpu_nios2_oci_fifo"
+Info (12128): Elaborating entity "SOPC_cpu_nios2_oci_compute_tm_count" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_nios2_oci:the_SOPC_cpu_nios2_oci|SOPC_cpu_nios2_oci_fifo:the_SOPC_cpu_nios2_oci_fifo|SOPC_cpu_nios2_oci_compute_tm_count:SOPC_cpu_nios2_oci_compute_tm_count_tm_count"
+Info (12128): Elaborating entity "SOPC_cpu_nios2_oci_fifowp_inc" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_nios2_oci:the_SOPC_cpu_nios2_oci|SOPC_cpu_nios2_oci_fifo:the_SOPC_cpu_nios2_oci_fifo|SOPC_cpu_nios2_oci_fifowp_inc:SOPC_cpu_nios2_oci_fifowp_inc_fifowp"
+Info (12128): Elaborating entity "SOPC_cpu_nios2_oci_fifocount_inc" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_nios2_oci:the_SOPC_cpu_nios2_oci|SOPC_cpu_nios2_oci_fifo:the_SOPC_cpu_nios2_oci_fifo|SOPC_cpu_nios2_oci_fifocount_inc:SOPC_cpu_nios2_oci_fifocount_inc_fifocount"
+Info (12128): Elaborating entity "SOPC_cpu_oci_test_bench" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_nios2_oci:the_SOPC_cpu_nios2_oci|SOPC_cpu_nios2_oci_fifo:the_SOPC_cpu_nios2_oci_fifo|SOPC_cpu_oci_test_bench:the_SOPC_cpu_oci_test_bench"
+Warning (12158): Entity "SOPC_cpu_oci_test_bench" contains only dangling pins
+Info (12128): Elaborating entity "SOPC_cpu_nios2_oci_pib" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_nios2_oci:the_SOPC_cpu_nios2_oci|SOPC_cpu_nios2_oci_pib:the_SOPC_cpu_nios2_oci_pib"
+Info (12128): Elaborating entity "SOPC_cpu_nios2_oci_im" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_nios2_oci:the_SOPC_cpu_nios2_oci|SOPC_cpu_nios2_oci_im:the_SOPC_cpu_nios2_oci_im"
+Info (12128): Elaborating entity "SOPC_cpu_jtag_debug_module_wrapper" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_nios2_oci:the_SOPC_cpu_nios2_oci|SOPC_cpu_jtag_debug_module_wrapper:the_SOPC_cpu_jtag_debug_module_wrapper"
+Info (12128): Elaborating entity "SOPC_cpu_jtag_debug_module_tck" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_nios2_oci:the_SOPC_cpu_nios2_oci|SOPC_cpu_jtag_debug_module_wrapper:the_SOPC_cpu_jtag_debug_module_wrapper|SOPC_cpu_jtag_debug_module_tck:the_SOPC_cpu_jtag_debug_module_tck"
+Info (12128): Elaborating entity "SOPC_cpu_jtag_debug_module_sysclk" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_nios2_oci:the_SOPC_cpu_nios2_oci|SOPC_cpu_jtag_debug_module_wrapper:the_SOPC_cpu_jtag_debug_module_wrapper|SOPC_cpu_jtag_debug_module_sysclk:the_SOPC_cpu_jtag_debug_module_sysclk"
+Info (12128): Elaborating entity "sld_virtual_jtag_basic" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_nios2_oci:the_SOPC_cpu_nios2_oci|SOPC_cpu_jtag_debug_module_wrapper:the_SOPC_cpu_jtag_debug_module_wrapper|sld_virtual_jtag_basic:SOPC_cpu_jtag_debug_module_phy"
+Info (12128): Elaborating entity "sld_virtual_jtag_impl" for hierarchy "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_nios2_oci:the_SOPC_cpu_nios2_oci|SOPC_cpu_jtag_debug_module_wrapper:the_SOPC_cpu_jtag_debug_module_wrapper|sld_virtual_jtag_basic:SOPC_cpu_jtag_debug_module_phy|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst"
+Info (12128): Elaborating entity "SOPC_sysid" for hierarchy "SOPC:inst2|SOPC_sysid:sysid"
+Info (12128): Elaborating entity "SOPC_led" for hierarchy "SOPC:inst2|SOPC_led:led"
+Info (12128): Elaborating entity "SOPC_buzz" for hierarchy "SOPC:inst2|SOPC_buzz:buzz"
+Info (12128): Elaborating entity "altera_merlin_master_translator" for hierarchy "SOPC:inst2|altera_merlin_master_translator:cpu_instruction_master_translator"
+Info (12128): Elaborating entity "altera_merlin_master_translator" for hierarchy "SOPC:inst2|altera_merlin_master_translator:cpu_data_master_translator"
+Info (12128): Elaborating entity "altera_merlin_slave_translator" for hierarchy "SOPC:inst2|altera_merlin_slave_translator:cpu_jtag_debug_module_translator"
+Info (12128): Elaborating entity "altera_merlin_slave_translator" for hierarchy "SOPC:inst2|altera_merlin_slave_translator:epcs_epcs_control_port_translator"
+Info (12128): Elaborating entity "altera_merlin_slave_translator" for hierarchy "SOPC:inst2|altera_merlin_slave_translator:sdram_s1_translator"
+Info (12128): Elaborating entity "altera_merlin_slave_translator" for hierarchy "SOPC:inst2|altera_merlin_slave_translator:sysid_control_slave_translator"
+Info (12128): Elaborating entity "altera_merlin_slave_translator" for hierarchy "SOPC:inst2|altera_merlin_slave_translator:jtag_uart_avalon_jtag_slave_translator"
+Info (12128): Elaborating entity "altera_merlin_slave_translator" for hierarchy "SOPC:inst2|altera_merlin_slave_translator:spi_touch_spi_control_port_translator"
+Info (12128): Elaborating entity "altera_merlin_slave_translator" for hierarchy "SOPC:inst2|altera_merlin_slave_translator:lcd_cs_s1_translator"
+Info (12128): Elaborating entity "altera_merlin_master_agent" for hierarchy "SOPC:inst2|altera_merlin_master_agent:cpu_instruction_master_translator_avalon_universal_master_0_agent"
+Info (12128): Elaborating entity "altera_merlin_master_agent" for hierarchy "SOPC:inst2|altera_merlin_master_agent:cpu_data_master_translator_avalon_universal_master_0_agent"
+Info (12128): Elaborating entity "altera_merlin_slave_agent" for hierarchy "SOPC:inst2|altera_merlin_slave_agent:cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info (12128): Elaborating entity "altera_merlin_burst_uncompressor" for hierarchy "SOPC:inst2|altera_merlin_slave_agent:cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent|altera_merlin_burst_uncompressor:uncompressor"
+Info (12128): Elaborating entity "altera_avalon_sc_fifo" for hierarchy "SOPC:inst2|altera_avalon_sc_fifo:cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info (12128): Elaborating entity "altera_merlin_slave_agent" for hierarchy "SOPC:inst2|altera_merlin_slave_agent:sdram_s1_translator_avalon_universal_slave_0_agent"
+Info (12128): Elaborating entity "altera_merlin_burst_uncompressor" for hierarchy "SOPC:inst2|altera_merlin_slave_agent:sdram_s1_translator_avalon_universal_slave_0_agent|altera_merlin_burst_uncompressor:uncompressor"
+Info (12128): Elaborating entity "altera_avalon_sc_fifo" for hierarchy "SOPC:inst2|altera_avalon_sc_fifo:sdram_s1_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info (12128): Elaborating entity "altera_avalon_sc_fifo" for hierarchy "SOPC:inst2|altera_avalon_sc_fifo:sdram_s1_translator_avalon_universal_slave_0_agent_rdata_fifo"
+Info (12128): Elaborating entity "SOPC_addr_router" for hierarchy "SOPC:inst2|SOPC_addr_router:addr_router"
+Info (12128): Elaborating entity "SOPC_addr_router_default_decode" for hierarchy "SOPC:inst2|SOPC_addr_router:addr_router|SOPC_addr_router_default_decode:the_default_decode"
+Info (12128): Elaborating entity "SOPC_addr_router_001" for hierarchy "SOPC:inst2|SOPC_addr_router_001:addr_router_001"
+Info (12128): Elaborating entity "SOPC_addr_router_001_default_decode" for hierarchy "SOPC:inst2|SOPC_addr_router_001:addr_router_001|SOPC_addr_router_001_default_decode:the_default_decode"
+Info (12128): Elaborating entity "SOPC_id_router" for hierarchy "SOPC:inst2|SOPC_id_router:id_router"
+Info (12128): Elaborating entity "SOPC_id_router_default_decode" for hierarchy "SOPC:inst2|SOPC_id_router:id_router|SOPC_id_router_default_decode:the_default_decode"
+Info (12128): Elaborating entity "SOPC_id_router_002" for hierarchy "SOPC:inst2|SOPC_id_router_002:id_router_002"
+Info (12128): Elaborating entity "SOPC_id_router_002_default_decode" for hierarchy "SOPC:inst2|SOPC_id_router_002:id_router_002|SOPC_id_router_002_default_decode:the_default_decode"
+Info (12128): Elaborating entity "SOPC_id_router_003" for hierarchy "SOPC:inst2|SOPC_id_router_003:id_router_003"
+Info (12128): Elaborating entity "SOPC_id_router_003_default_decode" for hierarchy "SOPC:inst2|SOPC_id_router_003:id_router_003|SOPC_id_router_003_default_decode:the_default_decode"
+Info (12128): Elaborating entity "altera_merlin_traffic_limiter" for hierarchy "SOPC:inst2|altera_merlin_traffic_limiter:limiter"
+Info (12128): Elaborating entity "altera_merlin_burst_adapter" for hierarchy "SOPC:inst2|altera_merlin_burst_adapter:burst_adapter"
+Info (12128): Elaborating entity "altera_merlin_burst_adapter_uncompressed_only" for hierarchy "SOPC:inst2|altera_merlin_burst_adapter:burst_adapter|altera_merlin_burst_adapter_uncompressed_only:altera_merlin_burst_adapter_uncompressed_only.the_ba"
+Info (12128): Elaborating entity "altera_reset_controller" for hierarchy "SOPC:inst2|altera_reset_controller:rst_controller"
+Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "SOPC:inst2|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1"
+Info (12128): Elaborating entity "SOPC_cmd_xbar_demux" for hierarchy "SOPC:inst2|SOPC_cmd_xbar_demux:cmd_xbar_demux"
+Info (12128): Elaborating entity "SOPC_cmd_xbar_demux_001" for hierarchy "SOPC:inst2|SOPC_cmd_xbar_demux_001:cmd_xbar_demux_001"
+Info (12128): Elaborating entity "SOPC_cmd_xbar_mux" for hierarchy "SOPC:inst2|SOPC_cmd_xbar_mux:cmd_xbar_mux"
+Info (12128): Elaborating entity "altera_merlin_arbitrator" for hierarchy "SOPC:inst2|SOPC_cmd_xbar_mux:cmd_xbar_mux|altera_merlin_arbitrator:arb"
+Info (12128): Elaborating entity "altera_merlin_arb_adder" for hierarchy "SOPC:inst2|SOPC_cmd_xbar_mux:cmd_xbar_mux|altera_merlin_arbitrator:arb|altera_merlin_arb_adder:adder"
+Info (12128): Elaborating entity "SOPC_rsp_xbar_demux" for hierarchy "SOPC:inst2|SOPC_rsp_xbar_demux:rsp_xbar_demux"
+Info (12128): Elaborating entity "SOPC_rsp_xbar_demux_003" for hierarchy "SOPC:inst2|SOPC_rsp_xbar_demux_003:rsp_xbar_demux_003"
+Info (12128): Elaborating entity "SOPC_rsp_xbar_mux" for hierarchy "SOPC:inst2|SOPC_rsp_xbar_mux:rsp_xbar_mux"
+Info (12128): Elaborating entity "altera_merlin_arbitrator" for hierarchy "SOPC:inst2|SOPC_rsp_xbar_mux:rsp_xbar_mux|altera_merlin_arbitrator:arb"
+Info (12128): Elaborating entity "altera_merlin_arb_adder" for hierarchy "SOPC:inst2|SOPC_rsp_xbar_mux:rsp_xbar_mux|altera_merlin_arbitrator:arb|altera_merlin_arb_adder:adder"
+Info (12128): Elaborating entity "SOPC_rsp_xbar_mux_001" for hierarchy "SOPC:inst2|SOPC_rsp_xbar_mux_001:rsp_xbar_mux_001"
+Info (12128): Elaborating entity "altera_merlin_arbitrator" for hierarchy "SOPC:inst2|SOPC_rsp_xbar_mux_001:rsp_xbar_mux_001|altera_merlin_arbitrator:arb"
+Info (12128): Elaborating entity "altera_merlin_arb_adder" for hierarchy "SOPC:inst2|SOPC_rsp_xbar_mux_001:rsp_xbar_mux_001|altera_merlin_arbitrator:arb|altera_merlin_arb_adder:adder"
+Info (12128): Elaborating entity "altera_merlin_width_adapter" for hierarchy "SOPC:inst2|altera_merlin_width_adapter:width_adapter"
+Info (12128): Elaborating entity "altera_merlin_width_adapter" for hierarchy "SOPC:inst2|altera_merlin_width_adapter:width_adapter_001"
+Warning (10858): Verilog HDL warning at altera_merlin_width_adapter.sv(259): object in_burstwrap_field used but never assigned
+Warning (10036): Verilog HDL or VHDL warning at altera_merlin_width_adapter.sv(717): object "aligned_addr" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at altera_merlin_width_adapter.sv(718): object "aligned_byte_cnt" assigned a value but never read
+Warning (10030): Net "in_burstwrap_field" at altera_merlin_width_adapter.sv(259) has no driver or initial value, using a default initial value '0'
+Info (12128): Elaborating entity "SOPC_irq_mapper" for hierarchy "SOPC:inst2|SOPC_irq_mapper:irq_mapper"
+Warning (12125): Using design file altpll0.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: altpll0-SYN
+    Info (12023): Found entity 1: altpll0
+Info (12128): Elaborating entity "altpll0" for hierarchy "altpll0:inst"
+Info (12128): Elaborating entity "altpll" for hierarchy "altpll0:inst|altpll:altpll_component"
+Info (12130): Elaborated megafunction instantiation "altpll0:inst|altpll:altpll_component"
+Info (12133): Instantiated megafunction "altpll0:inst|altpll:altpll_component" with the following parameter:
+    Info (12134): Parameter "clk0_divide_by" = "1"
+    Info (12134): Parameter "clk0_duty_cycle" = "50"
+    Info (12134): Parameter "clk0_multiply_by" = "1"
+    Info (12134): Parameter "clk0_phase_shift" = "0"
+    Info (12134): Parameter "clk1_divide_by" = "1"
+    Info (12134): Parameter "clk1_duty_cycle" = "50"
+    Info (12134): Parameter "clk1_multiply_by" = "1"
+    Info (12134): Parameter "clk1_phase_shift" = "-5556"
+    Info (12134): Parameter "compensate_clock" = "CLK0"
+    Info (12134): Parameter "inclk0_input_frequency" = "20000"
+    Info (12134): Parameter "intended_device_family" = "Cyclone II"
+    Info (12134): Parameter "lpm_hint" = "CBX_MODULE_PREFIX=altpll0"
+    Info (12134): Parameter "lpm_type" = "altpll"
+    Info (12134): Parameter "operation_mode" = "NORMAL"
+    Info (12134): Parameter "port_activeclock" = "PORT_UNUSED"
+    Info (12134): Parameter "port_areset" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkbad0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkbad1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkloss" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkswitch" = "PORT_UNUSED"
+    Info (12134): Parameter "port_configupdate" = "PORT_UNUSED"
+    Info (12134): Parameter "port_fbin" = "PORT_UNUSED"
+    Info (12134): Parameter "port_inclk0" = "PORT_USED"
+    Info (12134): Parameter "port_inclk1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_locked" = "PORT_UNUSED"
+    Info (12134): Parameter "port_pfdena" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phasecounterselect" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phasedone" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phasestep" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phaseupdown" = "PORT_UNUSED"
+    Info (12134): Parameter "port_pllena" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanaclr" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanclk" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanclkena" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandata" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandataout" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandone" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanread" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanwrite" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk0" = "PORT_USED"
+    Info (12134): Parameter "port_clk1" = "PORT_USED"
+    Info (12134): Parameter "port_clk2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk3" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk4" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk5" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena3" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena4" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena5" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
+Warning (12020): Port "jdo" on the entity instantiation of "the_SOPC_cpu_nios2_oci_itrace" is connected to a signal of width 38. The formal width of the signal in the module is 16.  The extra bits will be ignored.
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276004): RAM logic "SOPC:inst2|altera_avalon_sc_fifo:sdram_s1_translator_avalon_universal_slave_0_agent_rdata_fifo|mem" is uninferred due to inappropriate RAM size
+Info (278001): Inferred 3 megafunctions from design logic
+    Info (278002): Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "SOPC:inst2|SOPC_cpu:cpu|Add10"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_mpt2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_multiplier_function:multiplier_block|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_2|altera_mult_add_opt2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_multiplier_function:multiplier_block|Mult0"
+Info (12130): Elaborated megafunction instantiation "SOPC:inst2|SOPC_cpu:cpu|lpm_add_sub:Add10"
+Info (12133): Instantiated megafunction "SOPC:inst2|SOPC_cpu:cpu|lpm_add_sub:Add10" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTH" = "33"
+    Info (12134): Parameter "LPM_DIRECTION" = "DEFAULT"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "ONE_INPUT_IS_CONSTANT" = "NO"
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8ri.tdf
+    Info (12023): Found entity 1: add_sub_8ri
+Info (12130): Elaborated megafunction instantiation "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_mpt2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_multiplier_function:multiplier_block|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_mpt2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_multiplier_function:multiplier_block|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "17"
+    Info (12134): Parameter "LPM_WIDTHB" = "17"
+    Info (12134): Parameter "LPM_WIDTHP" = "34"
+    Info (12134): Parameter "LPM_WIDTHR" = "34"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_1l01.tdf
+    Info (12023): Found entity 1: mult_1l01
+Info (12130): Elaborated megafunction instantiation "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_2|altera_mult_add_opt2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_multiplier_function:multiplier_block|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_mult_cell:the_SOPC_cpu_mult_cell|altera_mult_add:the_altmult_add_part_2|altera_mult_add_opt2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_multiplier_function:multiplier_block|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "16"
+    Info (12134): Parameter "LPM_WIDTHB" = "16"
+    Info (12134): Parameter "LPM_WIDTHP" = "32"
+    Info (12134): Parameter "LPM_WIDTHR" = "32"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "6"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_1s01.tdf
+    Info (12023): Found entity 1: mult_1s01
+Warning (12188): OpenCore Plus Hardware Evaluation feature is turned on for the following cores
+    Warning (12190): "Nios II Processor (6AF7_00A2)" will use the OpenCore Plus Hardware Evaluation feature
+Warning (265072): Messages from megafunction that supports OpenCore Plus feature
+    Warning (265073): Messages from megafunction that supports OpenCore Plus feature Nios II Processor
+        Warning (265074): The reset input will be asserted when the evaluation time expires
+Warning (265069): Megafunction that supports OpenCore Plus feature will stop functioning in 1 hour after device is programmed
+Info (265071): Evaluation period of megafunction that supports OpenCore Plus feature can be extended indefinitely by using tethered operation
+Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (13000): Registers with preset signals will power-up high
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "CKE" is stuck at VCC
+Info (17049): 424 registers lost all their fanouts during netlist optimizations.
+Info (13000): Registers with preset signals will power-up high
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "sld_hub:auto_hub|receive[0][0]" is stuck at GND
+Info (144001): Generated suppressed messages file D:/fpga/lcd_nios/synthesis/experiments/clk_40MHz/lcd_nios.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 5500 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 7 input pins
+    Info (21059): Implemented 43 output pins
+    Info (21060): Implemented 32 bidirectional pins
+    Info (21061): Implemented 5209 logic cells
+    Info (21064): Implemented 202 RAM segments
+    Info (21065): Implemented 1 PLLs
+    Info (21062): Implemented 4 DSP elements
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 20 warnings
+    Info: Peak virtual memory: 4805 megabytes
+    Info: Processing ended: Tue Sep 29 13:16:35 2026
+    Info: Elapsed time: 00:00:31
+    Info: Total CPU time (on all processors): 00:00:29
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Fitter
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Sep 29 13:16:36 2026
+Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off lcd_nios -c lcd_nios
+Info: qfit2_default_script.tcl version: #1
+Info: Project  = lcd_nios
+Info: Revision = lcd_nios
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (119006): Selected device EP2C5T144C8 for design "lcd_nios"
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (15535): Implemented PLL "altpll0:inst|altpll:altpll_component|pll" as Cyclone II PLL type
+    Info (15099): Implementing clock multiplication of 1, clock division of 1, and phase shift of 0 degrees (0 ps) for altpll0:inst|altpll:altpll_component|_clk0 port
+    Info (15099): Implementing clock multiplication of 1, clock division of 1, and phase shift of -100 degrees (-5556 ps) for altpll0:inst|altpll:altpll_component|_clk1 port
+Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
+Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
+Info (176444): Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices
+    Info (176445): Device EP2C5T144I8 is compatible
+    Info (176445): Device EP2C8T144C8 is compatible
+    Info (176445): Device EP2C8T144I8 is compatible
+Info (169124): Fitter converted 2 user pins into dedicated programming pins
+    Info (169125): Pin ~ASDO~ is reserved at location 1
+    Info (169125): Pin ~nCSO~ is reserved at location 2
+Info (176045): Design uses memory blocks. Violating setup or hold times of memory block address registers for either read or write operations could cause memory contents to be corrupted. Make sure that all memory block address registers meet the setup and hold time requirements.
+Critical Warning (169085): No exact pin location assignment(s) for 3 pins of 78 total pins
+    Info (169086): Pin out_port_from_the_bl_n not assigned to an exact location on the device
+    Info (169086): Pin out_port_from_the_bl_p not assigned to an exact location on the device
+    Info (169086): Pin SS_n_from_the_spi_touch not assigned to an exact location on the device
+Info (332164): Evaluating HDL-embedded SDC commands
+    Info (332165): Entity GHVD5181
+        Info (332166): set_disable_timing [get_cells -hierarchical QXXQ6833_0]
+        Info (332166): set_disable_timing [get_cells -hierarchical JEQQ5299_0]
+        Info (332166): set_disable_timing [get_cells -hierarchical JEQQ5299_1]
+        Info (332166): set_disable_timing [get_cells -hierarchical JEQQ5299_2]
+        Info (332166): set_disable_timing [get_cells -hierarchical JEQQ5299_3]
+        Info (332166): set_disable_timing [get_cells -hierarchical JEQQ5299_4]
+        Info (332166): set_disable_timing [get_cells -hierarchical JEQQ5299_5]
+        Info (332166): set_disable_timing [get_cells -hierarchical JEQQ5299_6]
+        Info (332166): set_disable_timing [get_cells -hierarchical JEQQ5299_7]
+        Info (332166): set_disable_timing [get_cells -hierarchical BITP7563_0]
+    Info (332165): Entity alt_jtag_atlantic
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|jupdate}] -to [get_registers {*|alt_jtag_atlantic:*|jupdate1*}] 
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|rdata[*]}] -to [get_registers {*|alt_jtag_atlantic*|td_shift[*]}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|rdata[*]}] -to [get_registers {*|alt_jtag_atlantic*|td_shift[*]}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|rdata[*]}] -to [get_registers {*|alt_jtag_atlantic*|td_shift[*]}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|rdata[*]}] -to [get_registers {*|alt_jtag_atlantic*|td_shift[*]}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|rdata[*]}] -to [get_registers {*|alt_jtag_atlantic*|td_shift[*]}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|rdata[*]}] -to [get_registers {*|alt_jtag_atlantic*|td_shift[*]}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|rdata[*]}] -to [get_registers {*|alt_jtag_atlantic*|td_shift[*]}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|rdata[*]}] -to [get_registers {*|alt_jtag_atlantic*|td_shift[*]}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|read}] -to [get_registers {*|alt_jtag_atlantic:*|read1*}] 
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|read_req}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|rvalid}] -to [get_registers {*|alt_jtag_atlantic*|td_shift[*]}]
+        Info (332166): set_false_path -from [get_registers {*|t_dav}] -to [get_registers {*|alt_jtag_atlantic:*|tck_t_dav}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|user_saw_rvalid}] -to [get_registers {*|alt_jtag_atlantic:*|rvalid0*}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|wdata[*]}] -to [get_registers {*}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|wdata[*]}] -to [get_registers {*}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|wdata[*]}] -to [get_registers {*}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|wdata[*]}] -to [get_registers {*}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|wdata[*]}] -to [get_registers {*}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|wdata[*]}] -to [get_registers {*}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|wdata[*]}] -to [get_registers {*}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|wdata[*]}] -to [get_registers {*}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|write}] -to [get_registers {*|alt_jtag_atlantic:*|write1*}] 
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|write_stalled}] -to [get_registers {*|alt_jtag_atlantic:*|t_ena*}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|write_stalled}] -to [get_registers {*|alt_jtag_atlantic:*|t_pause*}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|write_valid}]
+    Info (332165): Entity altera_std_synchronizer
+        Info (332166): set_false_path -to [get_keepers {*altera_std_synchronizer:*|din_s1}]
+    Info (332165): Entity pzdyqx_impl
+        Info (332166): set_false_path -from [get_keepers {altera_reserved_tdi}] -to [get_keepers {pzdyqx*}]
+    Info (332165): Entity sld_jtag_hub
+        Info (332166): create_clock -name altera_reserved_tck [get_ports {altera_reserved_tck}] -period 10MHz   
+        Info (332166): set_clock_groups -asynchronous -group {altera_reserved_tck}
+Info (332104): Reading SDC File: 'lcd_nios.sdc'
+Info (332110): Deriving PLL clocks
+    Info (332110): create_generated_clock -source {inst|altpll_component|pll|inclk[0]} -duty_cycle 50.00 -name {inst|altpll_component|pll|clk[0]} {inst|altpll_component|pll|clk[0]}
+    Info (332110): create_generated_clock -source {inst|altpll_component|pll|inclk[0]} -phase -100.00 -duty_cycle 50.00 -name {inst|altpll_component|pll|clk[1]} {inst|altpll_component|pll|clk[1]}
+Warning (332153): Family doesn't support jitter analysis.
+Info (332104): Reading SDC File: 'SOPC/synthesis/submodules/altera_reset_controller.sdc'
+Info (332104): Reading SDC File: 'SOPC/synthesis/submodules/SOPC_cpu.sdc'
+Warning (332056): PLL cross checking found inconsistent PLL clock settings:
+    Warning (332056): Clock: inst|altpll_component|pll|clk[0] with master clock period: 25.000 found on PLL node: inst|altpll_component|pll|clk[0] does not match the master clock period requirement: 20.000
+    Warning (332056): Clock: inst|altpll_component|pll|clk[1] with master clock period: 25.000 found on PLL node: inst|altpll_component|pll|clk[1] does not match the master clock period requirement: 20.000
+Info (332129): Detected timing requirements -- optimizing circuit to achieve only the specified requirements
+Info (332111): Found 4 clocks
+    Info (332111):   Period   Clock Name
+    Info (332111): ======== ============
+    Info (332111):  100.000 altera_reserved_tck
+    Info (332111):   25.000       clk_in
+    Info (332111):   25.000 inst|altpll_component|pll|clk[0]
+    Info (332111):   25.000 inst|altpll_component|pll|clk[1]
+Info (176353): Automatically promoted node altpll0:inst|altpll:altpll_component|_clk0 (placed in counter C0 of PLL_1)
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G3
+Info (176353): Automatically promoted node altpll0:inst|altpll:altpll_component|_clk1 (placed in counter C1 of PLL_1)
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G2
+Info (176353): Automatically promoted node altera_internal_jtag~TCKUTAP 
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
+Info (176353): Automatically promoted node pzdyqx:nabboc|pzdyqx_impl:pzdyqx_impl_inst|GHVD5181:\cycloneii_BITP7563_gen_0:cycloneii_BITP7563_gen_1|JEQQ5299_7 
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
+    Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
+        Info (176357): Destination node pzdyqx:nabboc|pzdyqx_impl:pzdyqx_impl_inst|GHVD5181:\cycloneii_BITP7563_gen_0:cycloneii_BITP7563_gen_1|JEQQ5299_7~0
+Info (176353): Automatically promoted node pzdyqx:nabboc|pzdyqx_impl:pzdyqx_impl_inst|GHVD5181:\cycloneii_BITP7563_gen_0:cycloneii_BITP7563_gen_1|BITP7563_0 
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
+Info (176353): Automatically promoted node SOPC:inst2|SOPC_cpu:cpu|hq3myc14108phmpo7y7qmhbp98hy0vq~0 
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
+    Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
+        Info (176357): Destination node SOPC:inst2|SOPC_cpu:cpu|SOPC_cpu_nios2_oci:the_SOPC_cpu_nios2_oci|SOPC_cpu_nios2_oci_debug:the_SOPC_cpu_nios2_oci_debug|altera_std_synchronizer:the_altera_std_synchronizer|din_s1
+Info (176353): Automatically promoted node SOPC:inst2|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1|altera_reset_synchronizer_int_chain_out 
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
+    Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
+        Info (176357): Destination node SOPC:inst2|SOPC_sdram:sdram|active_cs_n~0
+        Info (176357): Destination node SOPC:inst2|SOPC_sdram:sdram|active_rnw~3
+        Info (176357): Destination node SOPC:inst2|SOPC_cpu:cpu|hq3myc14108phmpo7y7qmhbp98hy0vq~0
+        Info (176357): Destination node SOPC:inst2|SOPC_sdram:sdram|i_refs[0]
+        Info (176357): Destination node SOPC:inst2|SOPC_sdram:sdram|i_refs[2]
+        Info (176357): Destination node SOPC:inst2|SOPC_sdram:sdram|i_refs[1]
+Info (176353): Automatically promoted node sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|clr_reg 
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
+    Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
+        Info (176357): Destination node sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|clr_reg~_wirecell
+Info (176233): Starting register packing
+Warning (176250): Ignoring invalid fast I/O register assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
+Info (176235): Finished register packing
+    Extra Info (176218): Packed 2 registers into blocks of type EC
+    Extra Info (176218): Packed 69 registers into blocks of type I/O
+    Extra Info (176218): Packed 64 registers into blocks of type Embedded multiplier block
+    Extra Info (176218): Packed 48 registers into blocks of type Embedded multiplier output
+    Extra Info (176220): Created 66 register duplicates
+Info (176214): Statistics of I/O pins that need to be placed that use the same VCCIO and VREF, before I/O pin placement
+    Info (176211): Number of I/O pins in group: 3 (unused VREF, 3.3V VCCIO, 0 input, 3 output, 0 bidirectional)
+        Info (176212): I/O standards used: 3.3-V LVTTL.
+Info (176215): I/O bank details before I/O pin placement
+    Info (176214): Statistics of I/O banks
+        Info (176213): I/O bank number 1 does not use VREF pins and has 3.3V VCCIO pins. 19 total pin(s) used --  4 pins available
+        Info (176213): I/O bank number 2 does not use VREF pins and has 3.3V VCCIO pins. 19 total pin(s) used --  4 pins available
+        Info (176213): I/O bank number 3 does not use VREF pins and has 3.3V VCCIO pins. 19 total pin(s) used --  4 pins available
+        Info (176213): I/O bank number 4 does not use VREF pins and has 3.3V VCCIO pins. 24 total pin(s) used --  0 pins available
+Warning (15064): PLL "altpll0:inst|altpll:altpll_component|pll" output port clk[1] feeds output pin "S_CLK" via non-dedicated routing -- jitter performance depends on switching rate of other design elements. Use PLL dedicated clock outputs to ensure jitter performance
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:03
+Info (170189): Fitter placement preparation operations beginning
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:02
+Info (170191): Fitter placement operations beginning
+Info (170137): Fitter placement was successful
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:02
+Info (170193): Fitter routing operations beginning
+Info (170195): Router estimated average interconnect usage is 28% of the available device resources
+    Info (170196): Router estimated peak interconnect usage is 33% of the available device resources in the region that extends from location X14_Y0 to location X28_Y14
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:04
+Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
+    Info (170201): Optimizations that may affect the design's routability were skipped
+    Info (170200): Optimizations that may affect the design's timing were skipped
+Info (11888): Total time spent on timing analysis during the Fitter is 2.38 seconds.
+Info (306004): Started post-fitting delay annotation
+Warning (306006): Found 74 output pins without output pin load capacitance assignment
+    Info (306007): Pin "bidir_port_to_and_from_the_lcd32_data[15]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "bidir_port_to_and_from_the_lcd32_data[14]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "bidir_port_to_and_from_the_lcd32_data[13]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "bidir_port_to_and_from_the_lcd32_data[12]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "bidir_port_to_and_from_the_lcd32_data[11]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "bidir_port_to_and_from_the_lcd32_data[10]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "bidir_port_to_and_from_the_lcd32_data[9]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "bidir_port_to_and_from_the_lcd32_data[8]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "bidir_port_to_and_from_the_lcd32_data[7]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "bidir_port_to_and_from_the_lcd32_data[6]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "bidir_port_to_and_from_the_lcd32_data[5]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "bidir_port_to_and_from_the_lcd32_data[4]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "bidir_port_to_and_from_the_lcd32_data[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "bidir_port_to_and_from_the_lcd32_data[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "bidir_port_to_and_from_the_lcd32_data[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "bidir_port_to_and_from_the_lcd32_data[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "DQ[15]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "DQ[14]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "DQ[13]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "DQ[12]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "DQ[11]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "DQ[10]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "DQ[9]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "DQ[8]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "DQ[7]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "DQ[6]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "DQ[5]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "DQ[4]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "DQ[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "DQ[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "DQ[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "DQ[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "CAS" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "CKE" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "CS" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "RAS" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "WE" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "out_port_from_the_bl_n" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "out_port_from_the_bl_p" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "out_port_from_the_lcd_cs" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "out_port_from_the_lcd_rd" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "out_port_from_the_lcd_rs" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "out_port_from_the_lcd_wr" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "out_port_from_the_reset" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "MOSI_from_the_spi_touch" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "SCLK_from_the_spi_touch" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "SS_n_from_the_spi_touch" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "out_port_from_the_touch_cs" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "S_CLK" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "BA[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "BA[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "buzz[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "buzz[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "buzz[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "buzz[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "led[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "led[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "led[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "led[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "RA[12]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "RA[11]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "RA[10]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "RA[9]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "RA[8]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "RA[7]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "RA[6]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "RA[5]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "RA[4]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "RA[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "RA[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "RA[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "RA[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "S_DQM[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "S_DQM[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+Info (306005): Delay annotation completed successfully
+Info (306004): Started post-fitting delay annotation
+Info (306005): Delay annotation completed successfully
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
+Info (176045): Design uses memory blocks. Violating setup or hold times of memory block address registers for either read or write operations could cause memory contents to be corrupted. Make sure that all memory block address registers meet the setup and hold time requirements.
+Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
+Info (144001): Generated suppressed messages file D:/fpga/lcd_nios/synthesis/experiments/clk_40MHz/lcd_nios.fit.smsg
+Info: Quartus II 64-Bit Fitter was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 5330 megabytes
+    Info: Processing ended: Tue Sep 29 13:16:55 2026
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:22
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Assembler
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Sep 29 13:16:55 2026
+Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off lcd_nios -c lcd_nios
+Info (115031): Writing out detailed assembly data for power analysis
+Info (115030): Assembler is generating device programming files
+Info (115017): Design contains a time-limited core -- only a single, time-limited programming file can be generated
+Warning (210042): Can't convert time-limited SOF into POF, HEX File, TTF, or RBF
+Info: Quartus II 64-Bit Assembler was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4581 megabytes
+    Info: Processing ended: Tue Sep 29 13:16:57 2026
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+Info (293026): Skipped module PowerPlay Power Analyzer due to the assignment FLOW_ENABLE_POWER_ANALYZER
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Sep 29 13:16:58 2026
+Info: Command: quartus_sta lcd_nios -c lcd_nios
+Info: qsta_default_script.tcl version: #1
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (332164): Evaluating HDL-embedded SDC commands
+    Info (332165): Entity GHVD5181
+        Info (332166): set_disable_timing [get_cells -hierarchical QXXQ6833_0]
+        Info (332166): set_disable_timing [get_cells -hierarchical JEQQ5299_0]
+        Info (332166): set_disable_timing [get_cells -hierarchical JEQQ5299_1]
+        Info (332166): set_disable_timing [get_cells -hierarchical JEQQ5299_2]
+        Info (332166): set_disable_timing [get_cells -hierarchical JEQQ5299_3]
+        Info (332166): set_disable_timing [get_cells -hierarchical JEQQ5299_4]
+        Info (332166): set_disable_timing [get_cells -hierarchical JEQQ5299_5]
+        Info (332166): set_disable_timing [get_cells -hierarchical JEQQ5299_6]
+        Info (332166): set_disable_timing [get_cells -hierarchical JEQQ5299_7]
+        Info (332166): set_disable_timing [get_cells -hierarchical BITP7563_0]
+    Info (332165): Entity alt_jtag_atlantic
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|jupdate}] -to [get_registers {*|alt_jtag_atlantic:*|jupdate1*}] 
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|rdata[*]}] -to [get_registers {*|alt_jtag_atlantic*|td_shift[*]}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|rdata[*]}] -to [get_registers {*|alt_jtag_atlantic*|td_shift[*]}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|rdata[*]}] -to [get_registers {*|alt_jtag_atlantic*|td_shift[*]}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|rdata[*]}] -to [get_registers {*|alt_jtag_atlantic*|td_shift[*]}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|rdata[*]}] -to [get_registers {*|alt_jtag_atlantic*|td_shift[*]}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|rdata[*]}] -to [get_registers {*|alt_jtag_atlantic*|td_shift[*]}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|rdata[*]}] -to [get_registers {*|alt_jtag_atlantic*|td_shift[*]}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|rdata[*]}] -to [get_registers {*|alt_jtag_atlantic*|td_shift[*]}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|read}] -to [get_registers {*|alt_jtag_atlantic:*|read1*}] 
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|read_req}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|rvalid}] -to [get_registers {*|alt_jtag_atlantic*|td_shift[*]}]
+        Info (332166): set_false_path -from [get_registers {*|t_dav}] -to [get_registers {*|alt_jtag_atlantic:*|tck_t_dav}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|user_saw_rvalid}] -to [get_registers {*|alt_jtag_atlantic:*|rvalid0*}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|wdata[*]}] -to [get_registers {*}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|wdata[*]}] -to [get_registers {*}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|wdata[*]}] -to [get_registers {*}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|wdata[*]}] -to [get_registers {*}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|wdata[*]}] -to [get_registers {*}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|wdata[*]}] -to [get_registers {*}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|wdata[*]}] -to [get_registers {*}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|wdata[*]}] -to [get_registers {*}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|write}] -to [get_registers {*|alt_jtag_atlantic:*|write1*}] 
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|write_stalled}] -to [get_registers {*|alt_jtag_atlantic:*|t_ena*}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|write_stalled}] -to [get_registers {*|alt_jtag_atlantic:*|t_pause*}]
+        Info (332166): set_false_path -from [get_registers {*|alt_jtag_atlantic:*|write_valid}]
+    Info (332165): Entity altera_std_synchronizer
+        Info (332166): set_false_path -to [get_keepers {*altera_std_synchronizer:*|din_s1}]
+    Info (332165): Entity pzdyqx_impl
+        Info (332166): set_false_path -from [get_keepers {altera_reserved_tdi}] -to [get_keepers {pzdyqx*}]
+    Info (332165): Entity sld_jtag_hub
+        Info (332166): create_clock -name altera_reserved_tck [get_ports {altera_reserved_tck}] -period 10MHz   
+        Info (332166): set_clock_groups -asynchronous -group {altera_reserved_tck}
+Info (332104): Reading SDC File: 'lcd_nios.sdc'
+Info (332110): Deriving PLL clocks
+    Info (332110): create_generated_clock -source {inst|altpll_component|pll|inclk[0]} -duty_cycle 50.00 -name {inst|altpll_component|pll|clk[0]} {inst|altpll_component|pll|clk[0]}
+    Info (332110): create_generated_clock -source {inst|altpll_component|pll|inclk[0]} -phase -100.00 -duty_cycle 50.00 -name {inst|altpll_component|pll|clk[1]} {inst|altpll_component|pll|clk[1]}
+Warning (332153): Family doesn't support jitter analysis.
+Info (332104): Reading SDC File: 'SOPC/synthesis/submodules/altera_reset_controller.sdc'
+Info (332104): Reading SDC File: 'SOPC/synthesis/submodules/SOPC_cpu.sdc'
+Warning (332056): PLL cross checking found inconsistent PLL clock settings:
+    Warning (332056): Clock: inst|altpll_component|pll|clk[0] with master clock period: 25.000 found on PLL node: inst|altpll_component|pll|clk[0] does not match the master clock period requirement: 20.000
+    Warning (332056): Clock: inst|altpll_component|pll|clk[1] with master clock period: 25.000 found on PLL node: inst|altpll_component|pll|clk[1] does not match the master clock period requirement: 20.000
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Info (332146): Worst-case setup slack is 8.046
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     8.046         0.000 inst|altpll_component|pll|clk[0] 
+Info (332146): Worst-case hold slack is 0.499
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.499         0.000 inst|altpll_component|pll|clk[0] 
+Info (332146): Worst-case recovery slack is 6.586
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     6.586         0.000 inst|altpll_component|pll|clk[0] 
+Info (332146): Worst-case removal slack is 4.054
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     4.054         0.000 inst|altpll_component|pll|clk[0] 
+Info (332146): Worst-case minimum pulse width slack is 9.433
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     9.433         0.000 inst|altpll_component|pll|clk[0] 
+    Info (332119):    12.500         0.000 clk_in 
+    Info (332119):    97.223         0.000 altera_reserved_tck 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Warning (332056): PLL cross checking found inconsistent PLL clock settings:
+    Warning (332056): Clock: inst|altpll_component|pll|clk[0] with master clock period: 25.000 found on PLL node: inst|altpll_component|pll|clk[0] does not match the master clock period requirement: 20.000
+    Warning (332056): Clock: inst|altpll_component|pll|clk[1] with master clock period: 25.000 found on PLL node: inst|altpll_component|pll|clk[1] does not match the master clock period requirement: 20.000
+Info (332146): Worst-case setup slack is 11.061
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    11.061         0.000 inst|altpll_component|pll|clk[0] 
+Info (332146): Worst-case hold slack is 0.215
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.215         0.000 inst|altpll_component|pll|clk[0] 
+Info (332146): Worst-case recovery slack is 10.131
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    10.131         0.000 inst|altpll_component|pll|clk[0] 
+Info (332146): Worst-case removal slack is 1.794
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     1.794         0.000 inst|altpll_component|pll|clk[0] 
+Info (332146): Worst-case minimum pulse width slack is 10.373
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    10.373         0.000 inst|altpll_component|pll|clk[0] 
+    Info (332119):    12.500         0.000 clk_in 
+    Info (332119):    97.778         0.000 altera_reserved_tck 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 4644 megabytes
+    Info: Processing ended: Tue Sep 29 13:17:02 2026
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
+Info (293000): Quartus II Full Compilation was successful. 0 errors, 38 warnings
+Info (23030): Evaluation of Tcl script d:/program/altera/13.0sp1/quartus/common/tcl/internal/qsh_flow.tcl was successful
+Info: Quartus II 64-Bit Shell was successful. 0 errors, 38 warnings
+    Info: Peak virtual memory: 4346 megabytes
+    Info: Processing ended: Tue Sep 29 13:17:02 2026
+    Info: Elapsed time: 00:01:00
+    Info: Total CPU time (on all processors): 00:00:01
